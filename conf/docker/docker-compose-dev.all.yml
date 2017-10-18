@@ -64,7 +64,7 @@ services:
     hostname: des_nginx
 
   django:
-    image: designsafeci/portal:local
+    image: designsafeci/portal:20171004
     env_file: ../env_files/designsafe.env
     links:
       - memcached:memcached
@@ -89,7 +89,7 @@ services:
     hostname: des_django
 
   workers:
-    image: designsafeci/portal:local
+    image: designsafeci/portal:20171004
     env_file: ../env_files/designsafe.env
     links:
       - memcached:memcached

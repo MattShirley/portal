@@ -50,6 +50,8 @@ urlpatterns = [
                                     namespace='designsafe_geo')),
     url(r'^rapid/', include('designsafe.apps.rapid.urls',
                                     namespace='designsafe_rapid')),
+    url(r'^potree/', include('designsafe.apps.potree.urls',
+                                    namespace='designsafe_potree')),
 
 
     # auth
